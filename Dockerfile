@@ -1,3 +1,3 @@
 FROM tomcat:9.0
 MAINTAINER "valaxytech@gmail.com" 
-COPY ./webapp.war /usr/local/tomcat/webapps
+COPY ./webapp.war /opt/apache-tomcat-10.0.27/webapps
