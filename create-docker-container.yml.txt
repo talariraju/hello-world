@@ -1,0 +1,14 @@
+---
+  - hosts: all
+    become: true
+    tasks:
+     - name: stop previous version docker
+       shell: docker stop valaxy_demo
+     - name: remove stopped container
+       shell: docker rm -f valaxy_demo
+     - name: remove docker images
+       shell: docker image rm -f talariraju/valaxy_demo
+     - name: pull docker image
+       shell: docker pull talariraju/valaxy_demo:latest
+     - name: create docker image
+       shell: docker run -d --name valaxy_demo -p 8090:8080 talariraju/valaxy_demo
