@@ -8,4 +8,4 @@
     mandal: Devanakonda,
     district: Kurnool.
     Time: 8:30AM to 9:00AM.
-    moblile no: 7989983603</h2> 
+    moblile no: 7989983603 please welcome</h2> 
